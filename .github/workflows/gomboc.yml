@@ -28,6 +28,6 @@ jobs:
 
       - uses: gomboc-ai/actions/on-pull-request-runner@main
         with:
-          mode: remediate
+          mode: audit
         env:
           GOMBOC_ACCESS_TOKEN: ${{ secrets.GOMBOC_ACCESS_TOKEN }}
