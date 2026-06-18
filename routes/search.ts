@@ -15,6 +15,8 @@ class ErrorWithParent extends Error {
   parent: Error | undefined
 }
 
+// my change
+
 // vuln-code-snippet start unionSqlInjectionChallenge dbSchemaChallenge
 export function searchProducts () {
   return (req: Request, res: Response, next: NextFunction) => {
