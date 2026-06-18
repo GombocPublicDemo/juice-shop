@@ -8,6 +8,7 @@ import { type Request, type Response, type NextFunction } from 'express'
 
 import * as utils from '../lib/utils'
 
+
 export function serveAngularClient () {
   return ({ url }: Request, res: Response, next: NextFunction) => {
     if (!utils.startsWith(url, '/api') && !utils.startsWith(url, '/rest')) {
