@@ -58,7 +58,7 @@ export function getUserProfile () {
         if (!code) {
           throw new Error('Username is null')
         }
-        username = eval(code) // eslint-disable-line no-eval
+        throw new Error('Dynamic code execution from user input is not permitted')
       } catch (err) {
         username = '\\' + username
       }
