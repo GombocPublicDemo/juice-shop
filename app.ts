@@ -11,6 +11,7 @@ async function app () {
   await server.start()
 }
 
+
 app()
   .catch(err => {
     throw err
